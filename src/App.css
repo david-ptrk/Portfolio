@@ -322,3 +322,66 @@
         min-height: 300px;
     }
 }
+
+/* About section */
+.about {
+    padding: 100px 32px;
+    background-color: #f8fafc;
+}
+
+.about-layout {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.about-heading h2 {
+    font-size: clamp(2rem 4vw 3.2rem);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.about-heading h2 span {
+    color: #2563eb;
+}
+
+.about-content > p {
+    margin-bottom: 20px;
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.about-content h3 {
+    margin: 32px 0 16px;
+    font-size: 1rem;
+}
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-skills span {
+    padding: 8px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #475569;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .about {
+        padding: 72px 20px;
+    }
+    
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
