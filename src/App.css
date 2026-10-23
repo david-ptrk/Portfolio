@@ -385,3 +385,58 @@
     }
 }
 
+/* Contact section */
+.contact {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 120px 32px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: clamp(2.2rem 5vw 4rem);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.contact h2 span {
+    color: #2563eb;
+}
+
+.contact-description {
+    max-width: 540px;
+    margin: 24px auto 32px;
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.contact .button {
+    margin-bottom: 28px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-links a {
+    color: #64748b;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #2563eb;
+}
+
+@media (max-width: 540px) {
+    .contact {
+        padding: 80px 20px;
+    }
+    
+    .contact h2 {
+        letter-spacing: -1px;
+    }
+}
