@@ -1,9 +1,16 @@
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <main>
-      <h1>Daud Anjum</h1>
-      <p>Web Developer</p>
-    </main>
+    <>
+      <Navbar />
+      
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
 
