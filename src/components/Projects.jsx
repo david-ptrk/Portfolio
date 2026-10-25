@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 const projects = [
     {
         number: "01",
@@ -5,7 +7,8 @@ const projects = [
         category: "Programming Language",
         description: "An AI-native programming language designed to make machine learning workflows more accessible.",
         technologies: ["Python", "C", "React"],
-        link: "https://github.com/david-ptrk/Pulse",
+        liveUrl: "",
+        git: "https://github.com/david-ptrk/Pulse",
     },
     {
         number: "02",
@@ -13,7 +16,8 @@ const projects = [
         category: "Web Development",
         description: "A web application built to solve a practical problem through a clean and functional interface.",
         technologies: ["React", "CSS", "JavaScript"],
-        link: "#",
+        liveUrl: "",
+        git: "",
     },
     {
         number: "03",
@@ -21,7 +25,8 @@ const projects = [
         category: "Software Development",
         description: "A software project focused on useful features, thoughtful design, and practical problem-solving.",
         technologies: ["JavaScript", "Python"],
-        link: "#",
+        liveUrl: "",
+        git: "",
     },
 ];
 
@@ -44,13 +49,34 @@ function Projects() {
                     <article className="project-card" key={project.number}>
                         <div className="project-card-top">
                             <span className="project-number">{project.number}</span>
-                            <a 
-                                href={project.link}
-                                className="project-link"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label={`View ${project.title}`}
-                            >{"\u2197"}</a>
+                            <div className="project-actions">
+                                <a 
+                                    href={project.liveUrl || undefined}
+                                    className={`project-link ${!project.liveUrl ? "project-link-disabled" : ""}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`Live website for ${project.title}`}
+                                    aria-disabled={!project.liveUrl}
+                                    onClick={(event) => {
+                                        if (!project.liveUrl) event.preventDefault();
+                                    }}
+                                >
+                                    <span aria-hidden="true">{"\u2197"}</span>
+                                </a>
+                                <a 
+                                    href={project.git || undefined}
+                                    className={`project-link ${!project.git ? "project-link-disabled" : ""}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`GitHub repository for ${project.title}`}
+                                    aria-disabled={!project.git}
+                                    onClick={(event) => {
+                                        if (!project.git) event.preventDefault();
+                                    }}
+                                >
+                                    <FaGithub aria-hidden="true" />
+                                </a>
+                            </div>
                         </div>
                         
                         <p className="project-category">{project.category}</p>

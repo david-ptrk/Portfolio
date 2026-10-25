@@ -243,6 +243,12 @@
     font-weight: 600;
 }
 
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .project-link {
     display: grid;
     width: 36px;
@@ -261,6 +267,11 @@
     color: #ffffff;
     background-color: #2563eb;
     border-color: #2563eb;
+}
+
+.project-link-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
 }
 
 .project-category {
