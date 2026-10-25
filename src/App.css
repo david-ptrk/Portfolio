@@ -543,3 +543,144 @@
         letter-spacing: -1px;
     }
 }
+
+/* Visual theme */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgb(11 17 32 / 85%);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgb(148 163 184 / 12%);
+}
+
+.navbar-links a {
+    color: #94a3b8;
+}
+
+.navbar-cta {
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+.navbar-cta:hover {
+    background-color: #1e293b;
+}
+
+/* Hero visual styling */
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+    right: 5%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #2563eb;
+    opacity: 0.15;
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+.hero h1 {
+    color: #f8fafc;
+}
+
+.hero-description {
+    color: #94a3b8;
+}
+
+.button-secondary {
+    color: #e2e8f0;
+    background-color: #111c30;
+    border-color: #334155;
+}
+
+.button-secondary:hover {
+    background-color: #1e293b;
+}
+
+/* Project card theme */
+.project-card {
+    background: linear-gradient(145deg, #111c30, #0f172a);
+    border-color: #243249;
+}
+
+.project-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 16px 40px rgb(0 0 0 / 25%);
+}
+
+.project-card h3 {
+    color: #f8f1fc;
+}
+
+.project-description, .project-category {
+    color: #94a3b8;
+}
+
+.project-link {
+    border-color: #334155;
+    color: #93c5fd;
+}
+
+.project-technologies span {
+    background-color: #1e293b;
+    color: #bfdbfe;
+}
+
+/* About section theme */
+.about {
+    background: linear-gradient(135deg, #111c30, #0d1526);
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+}
+
+.about-heading h2 {
+    color: #f8fafc;
+}
+
+.about-content > p {
+    color: #a5b4c7;
+}
+
+.about-content h3 {
+    color: #e2e8f0;
+}
+
+.about-skills span {
+    background-color: #172338;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+/* Contact and footer theme */
+.contact h2 {
+    color: #f8fafc;
+}
+
+.contact-description {
+    color: #94a3b8;
+}
+
+.footer {
+    border-top-color: #243249;
+}
+
+.footer-logo {
+    color: #f8fafc;
+}
+
+.footer > p, .footer-github {
+    color: #94a3b8;
+}
+
+.footer-copyright {
+    border-top-color: #1e293b;
+}
