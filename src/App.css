@@ -684,3 +684,12 @@
 .footer-copyright {
     border-top-color: #1e293b;
 }
+
+/* Active navigation link */
+.navbar-links a {
+    transition: color 0.2s ease;
+}
+
+.navbar-links a:hover, .navbar-links a.active {
+    color: #2563eb;
+}
