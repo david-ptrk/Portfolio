@@ -28,3 +28,17 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Prevent horizontal overflow */
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+  overflow-wrap: break-word;
+}

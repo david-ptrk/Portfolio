@@ -509,3 +509,37 @@
         text-align: left !important;
     }
 }
+
+/* Small-screen refinements */
+@media (max-width: 400px) {
+    .navbar {
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .navbar-links {
+        gap: 8px;
+    }
+    
+    .navbar-links a {
+        font-size: 0.8rem;
+    }
+    
+    .navbar-cta {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .hero h1 {
+        font-size: clamp(2.3rem, 10vw, 2.8rem);
+        letter-spacing: -1.5px;
+    }
+    
+    .projects-heading h2 {
+        letter-spacing: -1px;
+    }
+}
