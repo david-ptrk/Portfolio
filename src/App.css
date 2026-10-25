@@ -693,3 +693,43 @@
 .navbar-links a:hover, .navbar-links a.active {
     color: #2563eb;
 }
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #3b82f6;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 25%);
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.back-to-top:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+    .back-to-top {
+        right: 16px;
+        bottom: 16px;
+        width: 44px;
+        height: 44px;
+    }
+}
