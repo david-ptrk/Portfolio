@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import MessageForm from "./components/MessageForm";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Projects />
         <About />
         <Contact />
+        <MessageForm />
       </main>
       
       <Footer />
