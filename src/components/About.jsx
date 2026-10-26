@@ -1,10 +1,13 @@
 const skills = [
+    "HTML & CSS",
+    "Bootstrap",
+    "JavaScript",
     "Python",
     "Django",
-    "JavaScript",
-    "React",
-    "HTML & CSS",
+    "React JS",
     "C/C++",
+    "PHP & Laravel",
+    "MySQL",
 ];
 
 function About() {
