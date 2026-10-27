@@ -1,15 +1,3 @@
-const skills = [
-    "HTML & CSS",
-    "Bootstrap",
-    "JavaScript",
-    "Python",
-    "Django",
-    "React JS",
-    "C/C++",
-    "PHP & Laravel",
-    "MySQL",
-];
-
 function About() {
     return (
         <section className="about" id="about">
@@ -34,12 +22,6 @@ function About() {
                         building software that serves a practical purpose. I'm always looking for
                         opportunities to improve my skills and learn something new.
                     </p>
-                    <h3>Technologies I work with</h3>
-                    <div className="about-skills">
-                        {skills.map((skill) => (
-                            <span key={skill}>{skill}</span>
-                        ))}
-                    </div>
                 </div>
             </div>
         </section>

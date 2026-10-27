@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import MessageForm from "./components/MessageForm";
+import TechStack from "./components/TechStack";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <Projects />
         <About />
+        <TechStack />
         <Contact />
         <MessageForm />
       </main>
