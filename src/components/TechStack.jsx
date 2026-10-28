@@ -9,6 +9,7 @@ const technologies = [
     { name: 'Python', icon: 'devicon-python-plain colored' },
     { name: 'Django', icon: 'devicon-django-plain' },
     { name: 'Bootstrap', icon: 'devicon-bootstrap-plain colored' },
+    { name: 'Laravel', icon: 'devicon-laravel-plain colored' },
     { name: 'Git', icon: 'devicon-git-plain colored' },
     { name: 'GitHub', icon: 'devicon-github-original' },
     { name: 'Linux', icon: 'devicon-linux-plain' },
