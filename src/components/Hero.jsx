@@ -1,6 +1,11 @@
 function Hero() {
     return (
         <section className="hero" id="home">
+            <div className="hero-particles" aria-hidden="true">
+                {Array.from({ length: 14 }, (_, index) => (
+                    <span key={index} className="hero-particle" />
+                ))}
+            </div>
             <p className="hero-label">WEB DEVELOPER</p>
             
             <h1>
