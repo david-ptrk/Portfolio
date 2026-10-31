@@ -7,27 +7,18 @@ const projects = [
         category: "Programming Language",
         description: "An AI-native programming language designed to make machine learning workflows more accessible.",
         technologies: ["Python", "C", "React"],
-        liveUrl: "",
+        liveUrl: "https://pulse-language.vercel.app",
         git: "https://github.com/david-ptrk/Pulse",
     },
-    {
-        number: "02",
-        title: "Project Two",
-        category: "Web Development",
-        description: "A web application built to solve a practical problem through a clean and functional interface.",
-        technologies: ["React", "CSS", "JavaScript"],
-        liveUrl: "",
-        git: "",
-    },
-    {
-        number: "03",
-        title: "Project Three",
-        category: "Software Development",
-        description: "A software project focused on useful features, thoughtful design, and practical problem-solving.",
-        technologies: ["JavaScript", "Python"],
-        liveUrl: "",
-        git: "",
-    },
+    // {
+    //     number: "02",
+    //     title: "Project Two",
+    //     category: "Web Development",
+    //     description: "A web application built to solve a practical problem through a clean and functional interface.",
+    //     technologies: ["React", "CSS", "JavaScript"],
+    //     liveUrl: "",
+    //     git: "",
+    // },
 ];
 
 function Projects() {
